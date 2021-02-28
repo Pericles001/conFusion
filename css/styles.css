@@ -1,6 +1,15 @@
 #inPurple{
     background-color: rgb(149,117,205);
 }
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+
 .jumbotron{
     padding: 70px 30px 70px 30px;
     margin: 0px auto;
