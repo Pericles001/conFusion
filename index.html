@@ -87,6 +87,79 @@
       </div>
     </nav>
 
+    <!--working on reservation form -->
+
+    <div id="reservationModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title">
+              <h4>Reserve a Table</h4>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form action="" id="myForm">
+              <div class="form-group">
+                <label class="col-3" for="radio">Number of Guest</label>
+
+                <input type="radio" name="radio" value="1" id="" />
+                <label for="radio">1</label>
+                <input type="radio" name="radio" value="2" id="" />
+                <label for="radio">2</label>
+
+                <input type="radio" name="radio" value="3" id="" />
+                <label for="radio">3</label>
+
+                <input type="radio" name="radio" value="4" id="" />
+                <label for="radio">4</label>
+
+                <input type="radio" name="radio" value="5" id="" />
+                <label for="radio">5</label>
+
+                <input type="radio" name="radio" value="6" id="" />
+                <label for="radio">6</label>
+              </div>
+              <div class="form-group">
+                <label class="col-3 form-label" for="date_time"
+                  >Date and Time</label
+                >
+                <input
+                  class="col-4 input-sm form-control d-inline"
+                  type="text"
+                  name="Date"
+                  id=""
+                  placeholder="Date"
+                />
+                <input
+                  class="col-4 input-sm form-control d-inline"
+                  type="text"
+                  name="Time"
+                  id=""
+                  placeholder="Time"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div class="form-group ml-5 col-8">
+            <button
+              type="button"
+              class="btn btn-secondary btn-sm "
+              data-dismiss="modal"
+              style="margin-left: 150px;"
+            >
+              Cancel
+            </button>
+            <button type="submit" class=" btn btn-primary btn-sm">
+              Reserve
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--working on reservation form -->
+
     <div id="loginModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
@@ -161,15 +234,18 @@
             <img src="img/logo.png" alt="logo" class="img-fluid" />
           </div>
           <div class="col-6 col-sm align-self-center">
+            <!--trial-->
+
+            <!--trial-->
             <button
               type="button"
               class="btn btn-sm btn-warning"
-              data-toggle="tooltip"
+              data-toggle="modal"
               data-html="true"
               title="Or Call us at <br><strong>+852 12345678</strong>"
               data-placement="bottom"
-              data-target="#myForm"
-              onClick="window.location.href='#myForm'"
+              data-target="#reservationModal"
+              onClick="window.location.href='#reservationModal'"
             >
               Reserve Table
             </button>
@@ -196,12 +272,12 @@
                     <span class="badge badge-pill badge-default">$4.99</span>
                   </h2>
                   <p class="d-none d-sm-block">
-                    A unique combination of Indian Uthappam (pancake) and Italian
-                    pizza, topped with Cerignola olives, ripe vine cherry
-                    tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+                    A unique combination of Indian Uthappam (pancake) and
+                    Italian pizza, topped with Cerignola olives, ripe vine
+                    cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo
+                    Paneer.
                   </p>
                 </div>
-              
               </div>
 
               <div class="carousel-item">
@@ -212,7 +288,7 @@
                 />
 
                 <div class="carousel-caption d-none d-md-block">
-                  <h2 >
+                  <h2>
                     Weekend Grand Buffet<span
                       class="d-inline badge badge-danger"
                       >NEW</span
@@ -220,20 +296,24 @@
 
                     <p class="d-none d-sm-block">
                       Featuring mouthwatering combinations with a choice of five
-                      different salads, six enticing appetizers, six main entrees
-                      and five choicest desserts. Free flowing bubbly and soft
-                      drinks. All for just $19.99 per person
+                      different salads, six enticing appetizers, six main
+                      entrees and five choicest desserts. Free flowing bubbly
+                      and soft drinks. All for just $19.99 per person
                     </p>
                   </h2>
                 </div>
               </div>
 
               <div class="carousel-item">
-                <img src="img/alberto.png" class="d-block img-fluid" alt="alberto">
+                <img
+                  src="img/alberto.png"
+                  class="d-block img-fluid"
+                  alt="alberto"
+                />
                 <div class="carousel-caption d-none d-md-block">
                   <h2>Alberto Somayya</h2>
                   <h4>Executive Chief</h4>
-                  <p class="d-none d-sm-block"> </p>
+                  <p class="d-none d-sm-block"></p>
                   Award winning three-star Michelin chef with wide International
                   experience having worked closely with whos-who in the culinary
                   world, he specializes in creating mouthwatering Indo-Italian
@@ -242,24 +322,35 @@
               </div>
             </div>
             <ol class="carousel-indicators">
-              <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+              <li
+                data-target="#mycarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
               <li data-target="#mycarousel" data-slide-to="1"></li>
               <li data-target="#mycarousel" data-slide-to="2"></li>
-          </ol>
-          <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
+            </ol>
+            <a
+              class="carousel-control-prev"
+              href="#mycarousel"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#mycarousel"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </a>
           </div>
-         
         </div>
       </div>
 
-
-      
-      <hr class="myHr">
+      <hr class="myHr" />
       <div class="row">
         <div
           class="col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xs-12 d-lg-none d-md-none d-sm-none"
@@ -361,73 +452,6 @@
             </div>
           </div>
           <div></div>
-        </div>
-      </div>
-
-      <div class="row mt-4 mt-xs-4">
-        <div class="card col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xs-12 mx-auto">
-          <div
-            class="card-header bg-warning"
-            style="
-              font-size: 40px;
-              color: white;
-              margin-left: -15px;
-              margin-right: -15px;
-            "
-          >
-            Reserve a table
-          </div>
-          <div class="card-body">
-            <form action="" id="myForm">
-              <div class="form-group">
-                <label class="col-3" for="radio">Number of Guest</label>
-
-                <input type="radio" name="radio" value="1" id="" />
-                <label for="radio">1</label>
-                <input type="radio" name="radio" value="2" id="" />
-                <label for="radio">2</label>
-
-                <input type="radio" name="radio" value="3" id="" />
-                <label for="radio">3</label>
-
-                <input type="radio" name="radio" value="4" id="" />
-                <label for="radio">4</label>
-
-                <input type="radio" name="radio" value="5" id="" />
-                <label for="radio">5</label>
-
-                <input type="radio" name="radio" value="6" id="" />
-                <label for="radio">6</label>
-              </div>
-              <div class="form-group">
-                <label class="col-3 form-label" for="date_time"
-                  >Date and Time</label
-                >
-                <input
-                  class="col-4 input-sm form-control d-inline"
-                  type="text"
-                  name="Date"
-                  id=""
-                  placeholder="Date"
-                />
-                <input
-                  class="col-4 input-sm form-control d-inline"
-                  type="text"
-                  name="Time"
-                  id=""
-                  placeholder="Time"
-                />
-              </div>
-              <div class="form-group">
-                <button
-                  type="submit"
-                  class="offset-md-3 col-3 btn btn-primary btn-sm"
-                >
-                  Reserve
-                </button>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
     </div>
