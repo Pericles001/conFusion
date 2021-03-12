@@ -6,45 +6,59 @@ $background-pale: #D1C4E9;
 // Height variables
 $carousel-item-height: 300px;
 
-@mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin:0px auto;
-	padding: $pad-up-dn $pad-left-right;
+
+
+@mixin bgModalHeader {
+    background-color: #5133a5;
+}
+@mixin bgModal {
+    background-color: #d1c5e8;
+    ;
 }
 
-.row-header{
-    @include zero-margin(0px,0px);
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+.row-header {
+    @include zero-margin(0px, 0px);
 }
 
 .row-content {
-    @include zero-margin(50px,0px);
+    @include zero-margin(50px, 0px);
     border-bottom: 1px ridge;
-    min-height:400px;
+    min-height: 400px;
 }
 
-.footer{
+.footer {
     background-color: $background-pale;
     @include zero-margin(20px, 0px);
 }
 
 .jumbotron {
-    @include zero-margin(70px,30px);
-    background: $background-light ;
-    color:floralwhite;
+    @include zero-margin(70px, 30px);
+    background: $background-light;
+    color: floralwhite;
 }
 
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
 }
 
-body{
-    padding:50px 0px 0px 0px;
-    z-index:0;
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+
+    #inPurple {
+        background-color: #5f4d83;
+    }
 }
 
 .navbar-dark {
-     background-color: $background-dark;
+    background-color: $background-dark;
 }
 
 .tab-content {
@@ -55,10 +69,11 @@ body{
 }
 
 .carousel {
-    background:$background-dark;
+    background: $background-dark;
 
     .carousel-item {
         height: $carousel-item-height;
+
         img {
             position: absolute;
             top: 0;
@@ -69,8 +84,32 @@ body{
 }
 
 #carouselButton {
-    right:0px;
+    right: 0px;
     position: absolute;
     bottom: 0px;
     z-index: 1;
+}
+
+#reservationModal {
+   
+    .modal-header {
+       @include bgModalHeader();
+    }
+    .modal-body{
+        @include bgModal();
+    }
+
+   
+    
+}
+
+#loginModal{
+ 
+    .modal-header {
+        @include bgModalHeader();
+     }
+     .modal-body{
+         @include bgModal();
+     }
+ 
 }
